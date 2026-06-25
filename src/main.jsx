@@ -1,7 +1,9 @@
-import {createRoot} from "react-dom/client"
+import reactDOM from "react-dom/client"
 
-const root = createRoot(document.getElementById('root'))
-
-root.render(
-  <h1>Hello World, This is my First Project</h1>
+reactDOM.createRoot(document.getElementById('root')).render(
+  <ul>
+    <li>I will add a new skill to my profile</li>
+    <li>Can apply jobs as a frontend developer</li>
+    <li>can build beautiful projects</li>
+  </ul>
 )
