@@ -1,9 +1,11 @@
 import reactDOM from "react-dom/client"
 
+function MainContent(){
+  return(
+    <h1>React is great</h1>
+  )
+}
+
 reactDOM.createRoot(document.getElementById('root')).render(
-  <ul>
-    <li>I will add a new skill to my profile</li>
-    <li>Can apply jobs as a frontend developer</li>
-    <li>can build beautiful projects</li>
-  </ul>
+  <MainContent/>
 )
