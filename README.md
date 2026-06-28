@@ -1,16 +1,29 @@
-# React + Vite
+1. Where does React put all of the elements I create in JSX when I 
+   call `root.render()`?
+- From root -> index.html
+- All the elements I render get put inside the div with the id of "root"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+2. What would show up in my console if I were to run this line of code:
+```
+console.log(<h1>Hello world!</h1>)
+```
+- An object
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+3. What's wrong with this code:
+```
+root.render(
+    <h1>Hi there</h1>
+    <p>This is my website!</p>
+)
+```
+- JSX must return only one parent, multiple parents are not allowed
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+4. What does it mean for something to be "declarative" instead of "imperative"?
+- Imperative means we need to give specific step-by-step instructions on how to accomplish a task.
+- Declarative means we can write our code to simply "describe" what should show up on the page and allow the tool(react) to handle the details on how 
+to put those things on the page
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5. What does it mean for something to be "composable"?
+- breaking the larger pieces into small individual pieces and reusing them.
