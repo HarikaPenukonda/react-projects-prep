@@ -1,50 +1,8 @@
+import Footer from './Footer'
+import MainContent from './MainContent'
+import Header from './header'
 import './index.css'
-import reactLogo from '/src/assets/react.svg'
 
-function Header(){
-   return(
-       <>
-       <header className='header'>
-         <img className='react-logo' src={reactLogo}/>
-         <nav>
-            <ul className='nav-list'>
-               <li className='nav-list-item'>Pricing</li>
-               <li className='nav-list-item'>About</li>
-               <li className='nav-list-item'>Contact</li>
-            </ul>
-         </nav>
-       </header>
-       
-       </>
-   )
-}
-
-function MainContent(){
-   return(
-      <>
-         <main>
-            <h1>Fun facts about React</h1>
-            <ul>
-               <li>Was first released in 2013</li>
-               <li>Was originally created by Jordan Walke</li>
-               <li>Has well over 100K stars on GitHub</li>
-               <li>Is maintained by Meta</li>
-               <li>Powers thousands of enterprise apps, including mobile apps</li>
-            </ul> 
-         </main>
-      </>
-   )
-}
-
-function Footer(){
-   return(
-      <>
-         <footer>
-            <small>All rights reserverd to Harika Penukonda</small>
-         </footer>
-      </>
-   )
-}
 
 function SectionOne(){
    return(
