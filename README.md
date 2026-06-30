@@ -27,3 +27,33 @@ to put those things on the page
 
 5. What does it mean for something to be "composable"?
 - breaking the larger pieces into small individual pieces and reusing them.
+
+1. What is a React component?
+- It is a function which returns a JSX code and reusable
+- A function that returns React elements
+
+2. What's wrong with this code?
+```
+function myComponent() {
+    return (
+        <small>I'm tiny text!</small>
+    )
+}
+```
+- No parent? X
+- Pascal case
+
+3. What's wrong with this code?
+```
+function Header() {
+    return (
+        <header>
+            <img src="./react-logo.png" width="40px" alt="React logo" />
+        </header>
+    )
+}
+
+root.render(Header())
+```
+- multiple parents? X
+- <Header/> not Header()
