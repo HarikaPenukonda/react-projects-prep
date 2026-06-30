@@ -4,8 +4,15 @@ import reactLogo from '/src/assets/react.svg'
 function Header(){
    return(
        <>
-       <header>
-       <img src={reactLogo} width={40} />
+       <header className='header'>
+         <img className='react-logo' src={reactLogo}/>
+         <nav>
+            <ul className='nav-list'>
+               <li className='nav-list-item'>Pricing</li>
+               <li className='nav-list-item'>About</li>
+               <li className='nav-list-item'>Contact</li>
+            </ul>
+         </nav>
        </header>
        
        </>
