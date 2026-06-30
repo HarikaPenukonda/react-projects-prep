@@ -1,10 +1,10 @@
+import Header from './header'
 import './index.css'
-import reactLogo from '/src/assets/react.svg'
 
 function SectionOne(){
    return(
     <>
-    <img src={reactLogo} width={40} />
+    <Header/>
     <h1>Fun facts about React</h1>
     <ul>
         <li>Was first released in 2013</li>
