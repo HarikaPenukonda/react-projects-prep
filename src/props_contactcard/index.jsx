@@ -1,3 +1,4 @@
+import './index.css'
 /**
  * Challenge:
  * - Create a Contact component in another file
@@ -11,20 +12,20 @@ export default function ContactCard() {
         <div className="contacts">
             <article className="contact-card">
                 <img 
-                    src="./images/mr-whiskerson.png"
+                    src="src/assets/mr-whiskerson.png"
                     alt="Photo of Mr. Whiskerson"
                 />
                 <h3>Mr. Whiskerson</h3>
                 <div className="info-group">
                     <img 
-                        src="./images/phone-icon.png" 
+                        src="src/assets/phone-icon.png" 
                         alt="phone icon" 
                     />
                     <p>(212) 555-1234</p>
                 </div>
                 <div className="info-group">
                     <img 
-                        src="./images/mail-icon.png" 
+                        src="src/assets/mail-icon.png" 
                         alt="mail icon"
                     />
                     <p>mr.whiskaz@catnap.meow</p>
@@ -33,20 +34,20 @@ export default function ContactCard() {
             
             <article className="contact-card">
                 <img 
-                    src="./images/fluffykins.png"
+                    src="src/assets/fluffykins.png"
                     alt="Photo of Fluffykins"
                 />
                 <h3>Fluffykins</h3>
                 <div className="info-group">
                     <img 
-                        src="./images/phone-icon.png" 
+                        src="src/assets/phone-icon.png" 
                         alt="phone icon" 
                     />
                     <p>(212) 555-2345</p>
                 </div>
                 <div className="info-group">
                     <img 
-                        src="./images/mail-icon.png" 
+                        src="src/assets/mail-icon.png" 
                         alt="mail icon"
                     />
                     <p>fluff@me.com</p>
@@ -55,20 +56,20 @@ export default function ContactCard() {
             
             <article className="contact-card">
                 <img 
-                    src="./images/felix.png"
+                    src="src/assets/felix.png"
                     alt="Photo of Felix"
                 />
                 <h3>Felix</h3>
                 <div className="info-group">
                     <img 
-                        src="./images/phone-icon.png" 
+                        src="src/assets/phone-icon.png" 
                         alt="phone icon" 
                     />
                     <p>(212) 555-4567</p>
                 </div>
                 <div className="info-group">
                     <img 
-                        src="./images/mail-icon.png" 
+                        src="src/assets/mail-icon.png" 
                         alt="mail icon"
                     />
                     <p>thecat@hotmail.com</p>
@@ -77,20 +78,20 @@ export default function ContactCard() {
             
             <article className="contact-card">
                 <img 
-                    src="./images/pumpkin.png"
+                    src="src/assets/pumpkin.png"
                     alt="Photo of Pumpkin"
                 />
                 <h3>Pumpkin</h3>
                 <div className="info-group">
                     <img 
-                        src="./images/phone-icon.png" 
+                        src="src/assets/phone-icon.png" 
                         alt="phone icon" 
                     />
                     <p>(0800) CAT KING</p>
                 </div>
                 <div className="info-group">
                     <img 
-                        src="./images/mail-icon.png" 
+                        src="src/assets/mail-icon.png" 
                         alt="mail icon"
                     />
                     <p>pumpkin@scrimba.com</p>
