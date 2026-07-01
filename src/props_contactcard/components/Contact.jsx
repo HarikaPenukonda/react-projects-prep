@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <>
-      <div className="contacts">
+      
         <article className="contact-card">
           <img
             src="src/assets/mr-whiskerson.png"
@@ -17,7 +17,6 @@ export default function Contact() {
             <p>mr.whiskaz@catnap.meow</p>
           </div>
         </article>
-      </div>
     </>
   );
 }

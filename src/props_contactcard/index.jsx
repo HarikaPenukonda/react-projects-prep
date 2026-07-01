@@ -11,7 +11,13 @@ import './index.css'
 export default function ContactCard() {
     return (
         <>
+        <div className="contacts">
             <Contact/>
+            <Contact/>
+            <Contact/>
+            <Contact/>
+        </div>
+            
         </>
     )
 }
