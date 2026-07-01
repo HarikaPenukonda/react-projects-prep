@@ -3,8 +3,11 @@ import globelogo from '../../assets/globe.png'
 export default function Header(){
     return(
         <>
+            <header>
             <img src={globelogo}/>
-            <header>This is a header</header>
+            <h1>My Travel Journal</h1>
+            </header>
+            
         </>
     )
 }
