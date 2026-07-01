@@ -7,6 +7,7 @@ export default function ProjectThree(){
         <>
             <Header/>
             <Entry/>
+            <Entry/>
         </>
     )
 }
