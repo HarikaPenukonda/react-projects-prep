@@ -6,6 +6,7 @@ import SectionOne from './project_one'
 import ProjectTwo from './project_two'
 import ProjectThree from './project_three'
 import ContactCard from './props_contactcard'
+import Joke from './props_practice'
 
 function App() {
   
@@ -15,7 +16,8 @@ function App() {
     {/* <SectionOne/> */}
     {/* <ProjectTwo/> */}
     {/* <ProjectThree/> */}
-    <ContactCard/>
+    {/* <ContactCard/> */}
+    <Joke/>
    </>
   )
 }
