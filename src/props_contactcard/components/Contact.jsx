@@ -1,4 +1,4 @@
-export default function Contact({img, name, email, phone}) {
+export default function Contact(props) {
 
   //console.log(props) // prints email,img,name,phone from index.jsx
   return (
@@ -6,17 +6,17 @@ export default function Contact({img, name, email, phone}) {
       
         <article className="contact-card">
           <img
-            src={img}
+            src={props.img}
             alt="Photo of Mr. Whiskerson"
           />
-          <h3>{name}</h3>
+          <h3>{props.name}</h3>
           <div className="info-group">
             <img src="src/assets/phone-icon.png" alt="phone icon" />
-            <p>{phone}</p>
+            <p>{props.phone}</p>
           </div>
           <div className="info-group">
             <img src="src/assets/mail-icon.png" alt="mail icon" />
-            <p>{email}</p>
+            <p>{props.email}</p>
           </div>
         </article>
     </>
