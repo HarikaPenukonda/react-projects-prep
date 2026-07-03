@@ -25,13 +25,13 @@ export default function ContactCard() {
                 email = "fluff@me.com"
             />
             <Contact
-                img="./images/felix.png"
+                img="src/assets/felix.png"
                 name="Felix"
                 phone="(212) 555-4567"
                 email="thecat@hotmail.com"
             />
             <Contact 
-                img="./images/pumpkin.png"
+                img="src/assets/pumpkin.png"
                 name="Pumpkin"
                 phone="(0800) CAT KING"
                 email="pumpkin@scrimba.com"
