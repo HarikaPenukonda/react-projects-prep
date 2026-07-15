@@ -89,3 +89,17 @@ function Navbar() {
 
 5. What data type is `props` when the component receives it?
 - object
+
+1. What does the `.map()` array method do?
+- apply function on each element
+- 
+
+2. What do we usually use `.map()` for in React?
+- apply JSX to our elements
+
+
+3. Critical thinking: why is using `.map()` better than just
+   creating the components manually by typing them out?
+- code reusabilty
+- sometimes we dont have data in advance
+- self-sustaining
