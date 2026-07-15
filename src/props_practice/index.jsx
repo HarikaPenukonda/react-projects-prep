@@ -17,35 +17,18 @@
  * show the punchline?
  */
 
-import Data from "./component/Data";
+import jokesData from "./jokesData"
 import "./index.css"
+import Data from "./component/Data"
 
 export default function Joke() {
+
+    const jokeElements = jokesData.map((joke)=>{
+        return <Data setup = {joke.setup} punchline = {joke.punchline}/>
+    })
     return (
         <>
-            <Data
-                punchline =  "Just a punchline, No setup"
-            />
-            <Data
-                setup =  "I got my daughter a fridge for her birthday"
-                punchline =  "I can't wait to see her face light up when she opens it."
-            />
-            <Data
-                setup= "How did the hacker escape the police?"
-                punchline =  "He just ransomware!"
-            />
-            <Data
-                setup= "Why don't pirates travel on mountain roads?"
-                punchline= "Scurvy."
-            />
-            <Data
-                setup= "Why do bees stay in the hive in the winter?"
-                punchline= "Swarm."
-            />
-            <Data
-                setup = "What's the best thing about Switzerland?"
-                punchline =  "I don't know, but the flag is a big plus!"
-            />
+           {jokeElements}
         </>
     )
 }
