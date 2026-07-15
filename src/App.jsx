@@ -15,9 +15,9 @@ function App() {
    <>
     {/* <SectionOne/> */}
     {/* <ProjectTwo/> */}
-    {/* <ProjectThree/> */}
+    <ProjectThree/>
     {/* <ContactCard/> */}
-    <Joke/>
+    {/* <Joke/> */}
    </>
   )
 }
