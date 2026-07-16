@@ -7,18 +7,7 @@ export default function ProjectThree(){
     const dataElements = data.map((el) => {
         return <Entry
             key={el.id} 
-            img={
-                    {   
-                        src:el.img.src,
-                        alt:el.img.alt
-                    }
-                }
-            //img = { {}<-object  }<- javascript
-            title={el.title}
-            country={el.country}
-            googleMapsLink={el.googleMapsLink}
-            dates={el.dates}
-            text={el.text}
+            entry={el} // entry prop, and passing the entire el object, instead of passing each value of an object
             />
     })
     return(
