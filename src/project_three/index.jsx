@@ -7,7 +7,8 @@ export default function ProjectThree(){
     const dataElements = data.map((el) => {
         return <Entry
             key={el.id} 
-            entry={el} // entry prop, and passing the entire el object, instead of passing each value of an object
+            {...el} // spreading objects as props
+            //entry={el} // entry prop, and passing the entire el object, instead of passing each value of an object
             />
     })
     return(
