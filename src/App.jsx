@@ -8,7 +8,9 @@
 // import ContactCard from './ContactCard'
 // import Joke from './props_practice'
 //import ChefClaude from './ChefClaude'
-import UseStatePractice from './UseState'
+// import UseStatePractice from "./UseState/practice"
+import AppOne from "./UseState/practice/statepractice"
+
 
 function App() {
   
@@ -21,7 +23,8 @@ function App() {
     {/* <ContactCard/> */}
     {/* <Joke/> */}
     {/* <ChefClaude/> */}
-    <UseStatePractice/>
+    {/* <UseStatePractice/>  usestate practice one*/} 
+    <AppOne/> 
    </>
   )
 }
