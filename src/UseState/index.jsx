@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './index.css'
 
 export default function UseStatePractice(){
-    const result = useState() //  [undefined, ƒ]
+    const result = useState("Hello") //  [Hello, ƒ()]
     console.log(result)
 
     return(
