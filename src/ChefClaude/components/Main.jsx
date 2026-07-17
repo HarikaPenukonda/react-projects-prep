@@ -12,7 +12,8 @@ export default function Main(){
         // event.currentTarget refers to the element on which the event listener is attached. the event listener is attached to the <form>.
         // FormData is a built-in JavaScript object. It scans the form and collects every input that has a name attribute.
         const newIngredient = formData.get("ingredient") // Give me the value stored under the key ingredient.
-        console.log(newIngredient)
+        ingredients.push(newIngredient)
+        console.log(ingredients)
     }
     
     return(
