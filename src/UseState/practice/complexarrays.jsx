@@ -16,8 +16,13 @@ export default function ComplexArraysApp() {
   
     function addFavoriteThing() {
       // We'll work on this next, nothing to do here yet.
-      myFavoriteThings.push("Test") // to add an new value into the existing array, push() or simply modifying the state directly is not enough as it does not re-render the component
-      console.log(myFavoriteThings) // it adds Test to an array but it doesnt re-rendersss
+      //myFavoriteThings.push("Test") // to add an new value into the existing array, push() or simply modifying the state directly is not enough as it does not re-render the component
+      //console.log(myFavoriteThings) // it adds Test to an array but it doesnt re-rendersss
+      setMyFavouriteThings(
+        prevFavItems => [
+            ...prevFavItems,
+            "Test"
+        ])
 
     }
     
