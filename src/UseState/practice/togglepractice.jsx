@@ -13,7 +13,7 @@ export default function ToggleApp() {
     const[isGoingOut,setIsGoingOut] = useState(false)
 
     function handleClick(){
-        setIsGoingOut(!isGoingOut)
+        setIsGoingOut(prevState => !prevState)
     }
 
     return (
