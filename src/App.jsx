@@ -10,8 +10,9 @@
 //import ChefClaude from './ChefClaude'
 // import UseStatePractice from "./UseState/practice"
 // import AppOne from "./UseState/practice/statepractice"
+// import TernaryApp from "./UseState/practice/ternarypractice"
 
-import TernaryApp from "./UseState/practice/ternarypractice"
+import ToggleApp from "./UseState/practice/togglepractice"
 
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
     {/* <ChefClaude/> */}
     {/* <UseStatePractice/>  usestate practice one*/} 
     {/* <AppOne/>  */}
-    <TernaryApp/>
+    {/* <TernaryApp/> */}
+    <ToggleApp/>
    </>
   )
 }
