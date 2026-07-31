@@ -11,8 +11,9 @@
 // import UseStatePractice from "./UseState/practice"
 // import AppOne from "./UseState/practice/statepractice"
 // import TernaryApp from "./UseState/practice/ternarypractice"
+// import ToggleApp from "./UseState/practice/togglepractice"
 
-import ToggleApp from "./UseState/practice/togglepractice"
+import ComplexArraysApp from "./UseState/practice/complexarrays"
 
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
     {/* <UseStatePractice/>  usestate practice one*/} 
     {/* <AppOne/>  */}
     {/* <TernaryApp/> */}
-    <ToggleApp/>
+    {/* <ToggleApp/> */}
+    <ComplexArraysApp/>
    </>
   )
 }
