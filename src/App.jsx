@@ -9,7 +9,9 @@
 // import Joke from './props_practice'
 //import ChefClaude from './ChefClaude'
 // import UseStatePractice from "./UseState/practice"
-import AppOne from "./UseState/practice/statepractice"
+// import AppOne from "./UseState/practice/statepractice"
+
+import TernaryApp from "./UseState/practice/ternarypractice"
 
 
 function App() {
@@ -24,7 +26,8 @@ function App() {
     {/* <Joke/> */}
     {/* <ChefClaude/> */}
     {/* <UseStatePractice/>  usestate practice one*/} 
-    <AppOne/> 
+    {/* <AppOne/>  */}
+    <TernaryApp/>
    </>
   )
 }
