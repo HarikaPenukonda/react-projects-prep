@@ -103,3 +103,18 @@ function Navbar() {
 - code reusabilty
 - sometimes we dont have data in advance
 - self-sustaining
+
+1. You have 2 options for what you can pass in to a
+   state setter function (e.g. `setCount`). What are they?
+   - count, callback function
+   - pass the new version of the state that we want to use as replacement for the old version of the state.
+
+
+2. When would you want to pass the first option (from answer
+   above) to the state setter function?
+    - if we dont want to save old value
+
+
+3. When would you want to pass the second option (from answer
+   above) to the state setter function?
+    - if we ever want old value to help us determine new value
