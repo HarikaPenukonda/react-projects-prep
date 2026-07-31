@@ -21,7 +21,7 @@ export default function ComplexArraysApp() {
       setMyFavouriteThings(
         prevFavItems => [
             ...prevFavItems,
-            "Test"
+            allFavoriteThings[prevFavItems.length]
         ])
 
     }
