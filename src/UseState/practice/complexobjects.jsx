@@ -12,19 +12,16 @@ export default function ComplexObjectApp() {
         email: "itsmyrealname@example.com",
         isFavorite: true
     })
-    /**
-     * Challenge: 
-     * Update the following:
-     * - aria-pressed should reflect the same value as contact.isFavourite
-     * - aria-label should switch to say "Remove from favourites" is contact.isFavourite is `true`
-     * - img-alt should say "filled-star-icon" when filled
-     * 
-     */
 
     let starIcon = contact.isFavorite ? starFilled : starEmpty
 
     function toggleFavorite() {
-        console.log("Toggle Favorite")
+        setContact(prevContact => {
+            return {
+                ...prevContact,
+                isFavorite : !prevContact.isFavorite
+            }
+        })
     }
 
     return (
