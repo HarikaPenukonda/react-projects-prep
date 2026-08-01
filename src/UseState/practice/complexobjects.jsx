@@ -15,6 +15,7 @@ export default function ComplexObjectApp() {
 
     let starIcon = contact.isFavorite ? starFilled : starEmpty
 
+    // Explicit Return
     function toggleFavorite() {
         setContact(prevContact => {
             return {
@@ -23,6 +24,20 @@ export default function ComplexObjectApp() {
             }
         })
     }
+
+    // Implicit Return - To tell JavaScript: "This is an object expression." ({}<-object)
+    // function toggleFavorite() {
+    //     setContact(prevContact => ({...prevContact,isFavorite : !prevContact.isFavorite}))
+    // }
+    
+    // function toggleFavorite() {
+    //     setContact(prevContact => (
+    //         {
+    //             ...prevContact,
+    //             isFavorite : !prevContact.isFavorite
+    //         }
+    //     ))
+    // }
 
     return (
         <main>
