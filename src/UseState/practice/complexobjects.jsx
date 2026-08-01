@@ -13,12 +13,12 @@ export default function ComplexObjectApp() {
         isFavorite: true
     })
     /**
-     * Challenge: Use a ternary to determine which star image variable
-     * should be used based on the `contact.isFavourite` property, Test
-     * your results by manually changing the isFavourite value in state.
+     * Challenge: 
+     * Update the following:
+     * - aria-pressed should reflect the same value as contact.isFavourite
+     * - aria-label should switch to say "Remove from favourites" is contact.isFavourite is `true`
+     * - img-alt should say "filled-star-icon" when filled
      * 
-     * `true` => isFilled
-     * `false` => isNotFilled
      */
 
     let starIcon = contact.isFavorite ? starFilled : starEmpty
@@ -38,12 +38,13 @@ export default function ComplexObjectApp() {
                 <div className="info">
                     <button
                         onClick={toggleFavorite}
-                        aria-pressed={false}
+                        aria-pressed={contact.isFavorite}
+                        aria-label={contact.isFavorite ? "Remove from favourites" : "Add to favourites"}
                         className="favorite-button"
                     >
                         <img
                             src={starIcon}
-                            alt="empty star icon"
+                            alt={contact.isFavorite ? "filled-star-icon" : "empty star icon"}
                             className="favorite"
                         />
                     </button>
