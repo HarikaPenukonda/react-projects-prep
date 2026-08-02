@@ -8,21 +8,26 @@ export default function Main(){
         <li key={ingredient}>{ingredient}</li>
     ))
 
-    function handleSubmit(event){
+    function handleSubmit(formData){
 
-        event.preventDefault();   // Prevents page refresh
-        const formData = new FormData(event.currentTarget) 
+        //event.preventDefault();   // Prevents page refresh
+        //const formData = new FormData(event.currentTarget) 
         // event.currentTarget refers to the element on which the event listener is attached. the event listener is attached to the <form>.
         // FormData is a built-in JavaScript object. It scans the form and collects every input that has a name attribute.
         const newIngredient = formData.get("ingredient") // Give me the value stored under the key ingredient.
         setIngredients(prevIngredients => [...prevIngredients,newIngredient])
         console.log(ingredients)
     }
+
+    /**
+     * Challenge: use form action instead of onSubmit to
+     * handle the data from the form
+     */
     
     return(
         <>
         <main>
-            <form onSubmit={handleSubmit} className="add-ingredient-form">
+            <form action={handleSubmit} className="add-ingredient-form">
                 <input 
                     type="text"
                     placeholder="e.g. oregano"
