@@ -13,7 +13,9 @@
 // import TernaryApp from "./UseState/practice/ternarypractice"
 // import ToggleApp from "./UseState/practice/togglepractice"
 
-import ComplexObjectApp from "./UseState/practice/complexobjects"
+import ReactFormApp from "./ReactForms/reactForm"
+
+// import ComplexObjectApp from "./UseState/practice/complexobjects"
 
 //import ComplexArraysApp from "./UseState/practice/complexarrays"
 
@@ -34,7 +36,8 @@ function App() {
     {/* <TernaryApp/> */}
     {/* <ToggleApp/> */}
     {/* <ComplexArraysApp/> */}
-    <ComplexObjectApp/>
+    {/* <ComplexObjectApp/> */}
+    <ReactFormApp/>
    </>
   )
 }
