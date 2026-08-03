@@ -2,7 +2,7 @@ import React from "react"
 import "../cr.css"
 
 export default function ConditionalApp() {
-    const [unreadMessages, setUnreadMessages] = React.useState(["a"])
+    const [unreadMessages, setUnreadMessages] = React.useState([])
     
     /**
      * Challenge:
@@ -13,8 +13,8 @@ export default function ConditionalApp() {
     return (
         <>
         <div>
-            {/* {unreadMessages.length > 0 && <h1>You have {unreadMessages.length} unread messages!</h1>} */}
-            {unreadMessages.length > 0 ? <h1>You have {unreadMessages.length} unread messages!</h1> : <p>You have no unread messages</p>}
+            {unreadMessages.length > 0 && <h1>You have {unreadMessages.length} unread messages!</h1>}
+            {unreadMessages.length === 0 && <p>You have no unread messages</p>}
         </div>
         </>
     )
