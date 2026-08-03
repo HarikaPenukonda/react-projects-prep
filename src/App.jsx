@@ -6,7 +6,7 @@
 // import ProjectTwo from './ReactFactsApp'
 // import ProjectThree from './TravelApp' // static web app - Read-only
 // import ContactCard from './ContactCard'
-// import Joke from './props_practice'
+ import Joke from './props_practice'
 // import ChefClaude from './ChefClaude'
 // import UseStatePractice from "./UseState/practice"
 // import AppOne from "./UseState/practice/statepractice"
@@ -28,7 +28,7 @@ function App() {
     {/* <ProjectTwo/> */}
     {/* <ProjectThree/> */}
     {/* <ContactCard/> */}
-    {/* <Joke/> */}
+    <Joke/>
     {/* <ChefClaude/> */}
     {/* <UseStatePractice/>  usestate practice one*/} 
     {/* <AppOne/>  */}
@@ -37,7 +37,7 @@ function App() {
     {/* <ComplexArraysApp/> */}
     {/* <ComplexObjectApp/> */}
     {/* <ReactFormApp/> */}
-    <ConditionalApp/>
+    {/* <ConditionalApp/> */}
    </>
   )
 }
