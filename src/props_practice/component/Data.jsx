@@ -19,7 +19,8 @@ export default function Data(props){
             <div>
                 {isShown && <h4>Punchline : {props.punchline}</h4>}
             </div>
-            {isShown ? <button onClick={toggleButton}>hide punchline</button> : <button onClick={toggleButton}>show punchline</button>}
+            {/* {isShown ? <button onClick={toggleButton}>hide punchline</button> : <button onClick={toggleButton}>show punchline</button>} */}
+           <button onClick={toggleButton}>{isShown ? "hide" : "show"} punchline</button>
             <hr></hr>
         </>
     )
