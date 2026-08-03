@@ -17,7 +17,7 @@ export default function Data(props){
                
             </div>
             <div>
-                {isShown ? <h4>Punchline : {props.punchline}</h4> : <h4></h4>}
+                {isShown && <h4>Punchline : {props.punchline}</h4>}
             </div>
             <button onClick={toggleButton}>show punchline</button>
             <hr></hr>
