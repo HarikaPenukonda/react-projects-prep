@@ -3,8 +3,7 @@ import { useState } from "react"
 export default function Data(props){
      /**
      * Challenge:
-     * - Create state `isShown` (boolean, default to `false`)
-     * - Add a button that toggles the value back and forth
+     *  only show the punchline paragraph if isShow is `true`
      */
     const[isShown,setIsShown] = useState(false)
     function toggleButton(){
@@ -18,7 +17,7 @@ export default function Data(props){
                
             </div>
             <div>
-                <h4>Punchline : {props.punchline}</h4>
+                {isShown ? <h4>Punchline : {props.punchline}</h4> : <h4></h4>}
             </div>
             <button onClick={toggleButton}>show punchline</button>
             <hr></hr>
