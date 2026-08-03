@@ -9,7 +9,7 @@ export default function Data(props){
     function toggleButton(){
         setIsShown(prevValue => !prevValue)
     }
-    console.log(isShown)
+
     return(
         <>
             <div>
