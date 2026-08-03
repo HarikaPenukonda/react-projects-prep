@@ -6,7 +6,7 @@
 // import ProjectTwo from './ReactFactsApp'
 // import ProjectThree from './TravelApp' // static web app - Read-only
 // import ContactCard from './ContactCard'
- import Joke from './props_practice'
+// import Joke from './props_practice'
 // import ChefClaude from './ChefClaude'
 // import UseStatePractice from "./UseState/practice"
 // import AppOne from "./UseState/practice/statepractice"
@@ -15,6 +15,8 @@
 // import ReactFormApp from "./ReactForms/reactForm"
 // import ComplexObjectApp from "./UseState/practice/complexobjects"
 //import ComplexArraysApp from "./UseState/practice/complexarrays"
+
+import ConditionalApp from "./UseState/practice/conditionalrendering"
 
 
 function App() {
@@ -26,7 +28,7 @@ function App() {
     {/* <ProjectTwo/> */}
     {/* <ProjectThree/> */}
     {/* <ContactCard/> */}
-    <Joke/>
+    {/* <Joke/> */}
     {/* <ChefClaude/> */}
     {/* <UseStatePractice/>  usestate practice one*/} 
     {/* <AppOne/>  */}
@@ -35,6 +37,7 @@ function App() {
     {/* <ComplexArraysApp/> */}
     {/* <ComplexObjectApp/> */}
     {/* <ReactFormApp/> */}
+    <ConditionalApp/>
    </>
   )
 }
