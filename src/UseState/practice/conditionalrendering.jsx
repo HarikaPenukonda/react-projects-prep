@@ -2,17 +2,21 @@ import React from "react"
 import "../cr.css"
 
 export default function ConditionalApp() {
-    const [unreadMessages, setUnreadMessages] = React.useState(["a", "b"])
+    const [unreadMessages, setUnreadMessages] = React.useState(["a"])
     
     /**
      * Challenge:
-     * Only display the <h1> below if there are unread messages
+     * If there are 0 unread messages , display a pargraph that says "You
+     * have no unread messages"
      */
     
     return (
+        <>
         <div>
-            {unreadMessages.length > 0 && <h1>You have {unreadMessages.length} unread messages!</h1>}
+            {/* {unreadMessages.length > 0 && <h1>You have {unreadMessages.length} unread messages!</h1>} */}
+            {unreadMessages.length > 0 ? <h1>You have {unreadMessages.length} unread messages!</h1> : <p>You have no unread messages</p>}
         </div>
+        </>
     )
 }
 
