@@ -24,7 +24,10 @@ import Data from "./component/Data"
 export default function Joke() {
 
     const jokeElements = jokesData.map((joke)=>{
-        return <Data setup = {joke.setup} punchline = {joke.punchline}/>
+        return <Data 
+                    key={joke.id}
+                    setup = {joke.setup} 
+                    punchline = {joke.punchline}/>
     })
     return (
         <>
