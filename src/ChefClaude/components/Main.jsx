@@ -16,7 +16,7 @@ export default function Main(){
     }
 
     function handleReciepe(){
-        setRecipeShown(prevData => !prevData)
+        setRecipeShown(prevHown => !prevShown)
     }
 
      /**
