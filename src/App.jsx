@@ -16,7 +16,8 @@
 // import ComplexObjectApp from "./UseState/practice/complexobjects"
 //import ComplexArraysApp from "./UseState/practice/complexarrays"
 
-//import ConditionalApp from "./UseState/practice/conditionalrendering"
+import CRAppTwo from "./conditional_rendering/practice/practice_two"
+
 
 
 function App() {
@@ -37,7 +38,8 @@ function App() {
     {/* <ComplexArraysApp/> */}
     {/* <ComplexObjectApp/> */}
     {/* <ReactFormApp/> */}
-    {/* <ConditionalApp/> */}
+    <CRAppTwo/>
+    
    </>
   )
 }

@@ -1,7 +1,7 @@
 import React from "react"
 import "../cr.css"
 
-export default function ConditionalApp() {
+export default function CRAppOne() {
     const [unreadMessages, setUnreadMessages] = React.useState([])
     
     /**
