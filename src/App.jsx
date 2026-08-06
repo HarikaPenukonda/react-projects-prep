@@ -13,7 +13,7 @@
 // import TernaryApp from "./UseState/practice/ternarypractice"
 // import ToggleApp from "./UseState/practice/togglepractice"
 // import ReactFormApp from "./ReactForms/reactForm"
-// import ComplexObjectApp from "./UseState/practice/complexobjects"
+ import ComplexObjectApp from "./UseState/practice/complexobjects"
 //import ComplexArraysApp from "./UseState/practice/complexarrays"
 // import CRAppTwo from "./conditional_rendering/practice/practice_two"
 
@@ -37,10 +37,10 @@ function App() {
     {/* <TernaryApp/> */}
     {/* <ToggleApp/> */}
     {/* <ComplexArraysApp/> */}
-    {/* <ComplexObjectApp/> */}
+    <ComplexObjectApp/>
     {/* <ReactFormApp/> */}
     {/* <CRAppTwo/> */}
-    <StatePropsApp/>
+    {/* <StatePropsApp/> */}
     
    </>
   )

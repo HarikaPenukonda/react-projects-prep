@@ -3,6 +3,7 @@ import avatar from "../../assets/user.png"
 import starFilled from '../../assets/star-filled.png'
 import starEmpty from "../../assets/star-empty.png"
 import "../co.css"
+import Star from "./Star"
 
 export default function ComplexObjectApp() {
     const [contact, setContact] = React.useState({
@@ -13,8 +14,6 @@ export default function ComplexObjectApp() {
         isFavorite: true
     })
 
-    let starIcon = contact.isFavorite ? starFilled : starEmpty
-
     // Explicit Return
     function toggleFavorite() {
         setContact(prevContact => {
@@ -24,6 +23,18 @@ export default function ComplexObjectApp() {
             }
         })
     }
+
+     /**
+     * Challenge: Move the star image into its own component (Star)
+     * - It should receive a prop called `isFilled` that it
+     *   uses to determine which icon it will display. (You'll
+     *   need to import the 2 star icons into that new component first).
+     * - Import and render that component, passing the value of
+     *   `isFavorite` to the new `isFilled` prop.
+     * - Don't worry about the abiliity to flip this value quite yet.
+     *   Instead, you can test if it's working by manually changing
+     *   `isFavorite` in state above.
+     */
 
     // Implicit Return - To tell JavaScript: "This is an object expression." ({}<-object)
     // function toggleFavorite() {
@@ -48,18 +59,7 @@ export default function ComplexObjectApp() {
                     alt="User profile picture of John Doe"
                 />
                 <div className="info">
-                    <button
-                        onClick={toggleFavorite}
-                        aria-pressed={contact.isFavorite}
-                        aria-label={contact.isFavorite ? "Remove from favourites" : "Add to favourites"}
-                        className="favorite-button"
-                    >
-                        <img
-                            src={starIcon}
-                            alt={contact.isFavorite ? "filled-star-icon" : "empty star icon"}
-                            className="favorite"
-                        />
-                    </button>
+                    <Star isFilled={contact.isFavorite}/>
                     <h2 className="name">
                         {contact.firstName} {contact.lastName}
                        
