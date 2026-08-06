@@ -118,3 +118,20 @@ function Navbar() {
 3. When would you want to pass the second option (from answer
    above) to the state setter function?
     - if we ever want old value to help us determine new value
+
+1. What is "conditional rendering"?
+    - to display piece of UI based on the condition
+
+
+2. When would you use &&?
+- show only when the condition is true
+
+
+3. When would you use a ternary?
+- When we have to display piece of UI based on true or false condition
+
+
+
+4. What if you need to decide between > 2 options on
+   what to display?
+   - if, else
