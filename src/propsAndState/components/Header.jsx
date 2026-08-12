@@ -1,13 +1,18 @@
-import React from "react"
 import avatar from "../../assets/user_new.png"
 
-export default function Header() {
-    const [userName, setUserName] = React.useState("Joe")
+/**
+ * challenge : 
+ * Raise state up a level and pass it down to both
+ * Header and Body components through props
+ */
+
+export default function Header(props) {
+   
 
     return (
         <header>
             <img src={avatar} />
-            <p>{userName}</p>
+            <p>{props.name}</p>
         </header>
     )
 }
