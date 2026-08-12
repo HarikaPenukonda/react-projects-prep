@@ -17,8 +17,10 @@
 //import ComplexArraysApp from "./UseState/practice/complexarrays"
 // import CRAppTwo from "./conditional_rendering/practice/practice_two"
 
+import SPOne from "./sound_pads"
+
 // import StatePropsApp from "./UseState/practice/stateprops"
-import PropState from "./propsAndState"
+//import PropState from "./propsAndState"
 
 
 
@@ -42,7 +44,9 @@ function App() {
     {/* <ReactFormApp/> */}
     {/* <CRAppTwo/> */}
     {/* <StatePropsApp/> */}
-    <PropState/>
+    {/* <PropState/> */}
+
+    <SPOne/>
     
    </>
   )
