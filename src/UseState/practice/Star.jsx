@@ -7,6 +7,7 @@ export default function Star(props){
     return(
         <>
             <button
+                        onClick={props.handleClick}
                         aria-pressed={props.isFilled}
                         aria-label={props.isFilled ? "Remove from favourites" : "Add to favourites"}
                         className="favorite-button"
