@@ -2,21 +2,7 @@ import { useState } from "react"
 
 export default function Pad(props){
 
-/**
- * Challenge: Create state controlling whether
- * this pad is "on" or "off". Use the incoming
- * `props.on` to determine the initial state.
- * 
- * Create an event listener so when the pad is clicked,
- * it toggles from "on" to "off".
- * 
- * Goal: clicking each pad should toggle it on and off.
- */
 const [state,setState] = useState(props.on)
-
-function toggleClick(){
-    setState(prevState => !prevState)
-}
 
     const styles = {
         backgroundColor : props.color,
@@ -24,7 +10,7 @@ function toggleClick(){
 
     return(
         <>
-            <button onClick={toggleClick} style={styles} className={state ? "on" : ""}></button>
+            <button onClick={props.onclick} style={styles} className={state ? "on" : ""}></button>
         </>
     )
 }
