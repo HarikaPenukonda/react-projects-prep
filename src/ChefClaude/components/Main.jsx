@@ -18,10 +18,11 @@ export default function Main(){
  *    the app. (I don't mean between refreshes of your mini-browser.
  *    You don't need to save this to localStorage or anything more permanent
  *    than in React's memory for now.)
+ * - I am going to save the response in the react state
  *  
  * 
  * 2. What action from the user should trigger getting the recipe?
- * 
+ * - when the user clicks the get the recipe button
  */
 
     const [ingredients, setIngredients] = useState(["all the main spices", "pasta", "ground beef", "tomato paste"])
