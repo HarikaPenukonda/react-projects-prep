@@ -4,27 +4,25 @@ import IngredientsList from "./IngredientsList";
 
 export default function Main(){
 
-     /**
-     * Challenge: clean up our code!
-     * Let's make a couple new components to make things a
-     * little cleaner. (Notice: I'm not suggesting what we
-     * have now is bad or wrong. I'm mostly finding an excuse
-     * to get in some hands-on practice 🙂)
-     * 
-     * 1. Move the entire recipe <section> into its own
-     *    ClaudeRecipe component
-     * 2. Move the list of ingredients <section> into its
-     *    own IngredientsList component.
-     * 
-     * While you're considering how to structure things, consider
-     * where state is, think about if it makes sense or not to
-     * move it somewhere else, how you'll communicate between
-     * the parent/child components, etc.
-     * 
-     * The app should function as it currently does when you're
-     * done, so there will likely be some extra work to be done
-     * beyond what I've listed above.
-     */
+/**
+ * Challenge: Get a recipe from the AI!
+ * 
+ * This will be a bit harder of a challenge that will require you
+ * to think critically and synthesize the skills you've been
+ * learning and practicing up to this point.
+ * 
+ * We'll start with a mini-quiz:
+ * 
+ * 1. Think about where the recipe response should live and how you're
+ *    going to make sure it doesn't disappear between each state change in
+ *    the app. (I don't mean between refreshes of your mini-browser.
+ *    You don't need to save this to localStorage or anything more permanent
+ *    than in React's memory for now.)
+ *  
+ * 
+ * 2. What action from the user should trigger getting the recipe?
+ * 
+ */
 
     const [ingredients, setIngredients] = useState(["all the main spices", "pasta", "ground beef", "tomato paste"])
 
