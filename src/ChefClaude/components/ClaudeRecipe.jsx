@@ -1,4 +1,4 @@
-
+import ReactMarkdown from "react-markdown";
 
 export default function ClaudeRecipe(props){
     return(
@@ -6,7 +6,7 @@ export default function ClaudeRecipe(props){
         <section className="suggested-recipe-container">
                 <h2>Chef Claude Recommends:</h2>
                     <article className="suggested-recipe-container" aria-live="polite">
-                        {props.recipe}
+                       <ReactMarkdown>{props.recipe}</ReactMarkdown> 
                     </article>
             </section>
         </>
