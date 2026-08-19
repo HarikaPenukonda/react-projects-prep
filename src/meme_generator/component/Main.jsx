@@ -10,10 +10,15 @@ export default function Main() {
 
     const[meme, setMeme] = useState({topText:"One does not simply",bottomText:"Walk into Mordor",imageUrl:"http://i.imgflip.com/1bij.jpg"})
     function handleChange(event){ 
-        const {value} = event.currentTarget // event.currentTarget - When the user types something, the event object contains information about the input.
+        const {value,name} = event.currentTarget // object destructring
         setMeme(prevValue => ({
             ...prevValue,
-            topText : value
+            [name] : value // Use the value stored inside the name variable as the property name. computed property name.
+            /*
+                name = "topText"
+                value = "Hello"     
+                [name]: value becomes topText: "Hello"
+            */ 
         }))
         /**
          * Challenge: update the topText value in the meme state
@@ -31,6 +36,7 @@ export default function Main() {
                         placeholder="One does not simply"
                         name="topText"
                         onChange={handleChange}
+                        value={meme.topText}
                     />
                 </label>
 
@@ -39,6 +45,8 @@ export default function Main() {
                         type="text"
                         placeholder="Walk into Mordor"
                         name="bottomText"
+                        onChange={handleChange}
+                        value={meme.bottomText}
                     />
                 </label>
                 <button>Get a new meme image 🖼</button>
@@ -53,6 +61,7 @@ export default function Main() {
 }
 
 /**
+ * event.currentTarget - When the user types something, the event object contains information about the input.
  * Without destructuring - const value = event.currentTarget.value
  * event.currentTarget = {
     value: "Harika",
