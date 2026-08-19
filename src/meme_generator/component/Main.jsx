@@ -9,6 +9,19 @@ export default function Main() {
      */
 
     const[meme, setMeme] = useState({topText:"One does not simply",bottomText:"Walk into Mordor",imageUrl:"http://i.imgflip.com/1bij.jpg"})
+    function handleChange(event){ 
+        const {value} = event.currentTarget // event.currentTarget - When the user types something, the event object contains information about the input.
+        setMeme(prevValue => ({
+            ...prevValue,
+            topText : value
+        }))
+        /**
+         * Challenge: update the topText value in the meme state
+         * object every time the topText input box is changed
+         * 
+         * Note: don't worry about bottomText at this point.
+         */
+    }
     return (
         <main>
             <div className="form">
@@ -17,6 +30,7 @@ export default function Main() {
                         type="text"
                         placeholder="One does not simply"
                         name="topText"
+                        onChange={handleChange}
                     />
                 </label>
 
@@ -37,3 +51,27 @@ export default function Main() {
         </main>
     )
 }
+
+/**
+ * Without destructuring - const value = event.currentTarget.value
+ * event.currentTarget = {
+    value: "Harika",
+    name: "username",
+    type: "text"
+}
+const { value } = event.currentTarget
+    extracts
+    value
+    ↓
+    "Harika"
+
+-- Why use destructuring? It's mainly for convenience and readability.
+
+Instead of repeatedly writing:
+    event.currentTarget.value
+    event.currentTarget.name
+    event.currentTarget.type
+
+you can do: const { value, name, type } = event.currentTarget
+ * 
+ */
