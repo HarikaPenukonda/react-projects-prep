@@ -7,7 +7,7 @@
 // import ProjectThree from './TravelApp' // static web app - Read-only
 // import ContactCard from './ContactCard'
 // import Joke from './props_practice'
-import ChefClaude from './ChefClaude'
+// import ChefClaude from './ChefClaude'
 // import UseStatePractice from "./UseState/practice"
 // import AppOne from "./UseState/practice/statepractice"
 // import TernaryApp from "./UseState/practice/ternarypractice"
@@ -16,6 +16,8 @@ import ChefClaude from './ChefClaude'
 // import ComplexObjectApp from "./UseState/practice/complexobjects"
 //import ComplexArraysApp from "./UseState/practice/complexarrays"
 // import CRAppTwo from "./conditional_rendering/practice/practice_two"
+
+import MemeGeneratorApp from "./meme_generator"
 
 // import SPOne from "./sound_pads"
 
@@ -34,7 +36,7 @@ function App() {
     {/* <ProjectThree/> */}
     {/* <ContactCard/> */}
     {/* <Joke/> */}
-    <ChefClaude/>
+    {/* <ChefClaude/> */}
     {/* <UseStatePractice/>  usestate practice one*/} 
     {/* <AppOne/>  */}
     {/* <TernaryApp/> */}
@@ -45,8 +47,9 @@ function App() {
     {/* <CRAppTwo/> */}
     {/* <StatePropsApp/> */}
     {/* <PropState/> */}
-
     {/* <SPOne/> */}
+
+    <MemeGeneratorApp/>
     
    </>
   )
